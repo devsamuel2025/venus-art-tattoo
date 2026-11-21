@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Venus Art Tattoo · Portfólio de Isabel</title>
 <meta name="description" content="Venus Art Tattoo: tatuagens autorais, fine line, retrato pet, blackwork e anime por Isabel. Agende pelo WhatsApp.">
+<meta name="theme-color" content="#B8120E">
+<link rel="canonical" href="https://venus-art-tattoo.vercel.app/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23B8120E'/%3E%3Ctext x='32' y='47' font-family='serif' font-size='42' font-weight='700' text-anchor='middle' fill='%23FBF7E4'%3EV%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Venus Art Tattoo">
+<meta property="og:title" content="Venus Art Tattoo · Portfólio de Isabel">
+<meta property="og:description" content="Tatuagens autorais: fine line, retrato pet, blackwork, anime e realismo. Peça seu orçamento pelo WhatsApp.">
+<meta property="og:url" content="https://venus-art-tattoo.vercel.app/">
+<meta property="og:image" content="https://venus-art-tattoo.vercel.app/img/og-capa.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TattooParlor","name":"Venus Art Tattoo","url":"https://venus-art-tattoo.vercel.app/","image":"https://venus-art-tattoo.vercel.app/img/og-capa.jpg","telephone":"+55 62 99441-3872","sameAs":["https://instagram.com/venustattoo.art"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Rye&family=Special+Elite&family=Bebas+Neue&family=Abril+Fatface&family=Lexend:wght@300;400;500;600&family=Lato:wght@700;900&display=swap" rel="stylesheet">
@@ -17,11 +31,14 @@
   --ease:cubic-bezier(.2,.8,.2,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{font-family:var(--sans);background:var(--cream);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 ::selection{background:var(--red);color:var(--cream)}
+:focus-visible{outline:2px solid var(--red-hot);outline-offset:4px}
+.on-red :focus-visible,.hero :focus-visible,.contact :focus-visible{outline-color:var(--cream)}
+body.lb-open{overflow:hidden}
 
 /* grain */
 body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.09;mix-blend-mode:multiply;
@@ -274,6 +291,7 @@ footer .bottom{position:relative;display:flex;justify-content:space-between;flex
   .contact-photo{height:60vh}
 }
 @media (max-width:560px){
+  .wa{width:52px;height:52px;right:16px;bottom:16px}.wa svg{width:26px;height:26px}
   .links,form.quote{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
   .step,.step + .step{padding-left:0;border-left:0;border-bottom:1px solid rgba(251,247,228,.2);padding-bottom:24px}
@@ -322,7 +340,7 @@ footer .bottom{position:relative;display:flex;justify-content:space-between;flex
     </div>
   </div>
 
-  <div class="hero-photo"><img src="img/isabel-hero.jpg" alt="Isabel, tatuadora da Venus Art Tattoo"></div>
+  <div class="hero-photo"><img src="img/isabel-hero.jpg" alt="Isabel, tatuadora da Venus Art Tattoo" width="535" height="640"></div>
 
   <svg class="stamp" viewBox="0 0 140 140" aria-hidden="true">
     <defs><path id="circ" d="M70,70 m-55,0 a55,55 0 1,1 110,0 a55,55 0 1,1 -110,0"/></defs>
@@ -340,14 +358,14 @@ footer .bottom{position:relative;display:flex;justify-content:space-between;flex
   <div class="dots"></div>
   <div class="wrap about-grid">
     <div class="about-photo rv">
-      <div class="pic"><img src="img/isabel-sobre.jpg" alt="Isabel" data-parallax="0.12"></div>
+      <div class="pic"><img src="img/isabel-sobre.jpg" alt="Isabel" data-parallax="0.12" width="432" height="660" loading="lazy" decoding="async"></div>
       <div class="tag">Isabel ✦ tatuadora</div>
     </div>
     <div>
       <div class="label rv">01 · quem sou eu</div>
       <h2 class="blk rv d1">Sobre Mim</h2>
       <p class="rv d2">Olá! Meu nome é <strong>Isabel</strong> e sou a pessoa por trás da <strong>Venus Art Tattoo</strong>. Sou apaixonada pelo universo da arte: dar vida a uma ideia, representar um sentimento ou eternizar um momento especial é algo que me encanta. Afinal, a arte tem esse poder único de transformar momentos e histórias.</p>
-      <p class="rv d3">Mesmo sem um posicionamento fechado em um único estilo, meu trabalho já tem características e uma identidade próprias.</p>
+      <p class="rv d3">Apesar de ainda não ter um posicionamento completamente definido no mercado da tatuagem, meu trabalho já apresenta características e uma identidade próprias.</p>
       <p class="rv d4">Acredito que a arte, assim como a expressão, deve ser livre, autêntica e estar além de padrões e convenções. Gosto da liberdade de experimentar, explorar possibilidades e permitir que cada criação tenha sua própria identidade.</p>
       <div class="signature rv d4">Isabel</div>
     </div>
@@ -358,7 +376,7 @@ footer .bottom{position:relative;display:flex;justify-content:space-between;flex
 <section class="vm on-red" id="visao">
   <div class="halftone"></div>
   <div class="wrap vm-grid">
-    <div class="vm-img rv"><img src="img/vision-arm.jpg" alt="Tatuagem blackwork com espinhos"></div>
+    <div class="vm-img rv"><img src="img/vision-arm.jpg" alt="Tatuagem blackwork com espinhos" width="280" height="465" loading="lazy" decoding="async"></div>
     <div>
       <div class="vision">
         <div class="label rv">02 · no que acredito</div>
@@ -383,12 +401,12 @@ footer .bottom{position:relative;display:flex;justify-content:space-between;flex
       <div class="label rv">03 · portfólio</div>
       <h2 class="blk rv d1">Ponto Alto</h2>
     </div>
-    <p class="rv d2">Os trabalhos que mais me orgulham: do realismo em preto e cinza ao traço ilustrativo com toques de cor.</p>
+    <p class="rv d2">Os trabalhos de que mais me orgulho: do realismo em preto e cinza ao traço ilustrativo com toques de cor.</p>
   </div>
   <div class="hl-strip">
-    <figure class="hl-item" data-lb="0"><img src="img/jesus.jpg" alt="Tatuagem realista de Jesus"><figcaption><b>Fé</b><span>realismo</span></figcaption></figure>
-    <figure class="hl-item" data-lb="1"><img src="img/carta.jpg" alt="Tatuagem de carta colorida"><figcaption><b>A Carta</b><span>colorido</span></figcaption></figure>
-    <figure class="hl-item" data-lb="2"><img src="img/the-fool.jpg" alt="Tatuagem da carta de tarô The Fool"><figcaption><b>The Fool</b><span>tarô</span></figcaption></figure>
+    <figure class="hl-item" data-lb="0"><img src="img/jesus.jpg" alt="Tatuagem realista de Jesus" width="353" height="340" loading="lazy" decoding="async"><figcaption><b>Fé</b><span>realismo</span></figcaption></figure>
+    <figure class="hl-item" data-lb="1"><img src="img/carta.jpg" alt="Tatuagem de carta colorida" width="349" height="340" loading="lazy" decoding="async"><figcaption><b>A Carta</b><span>colorido</span></figcaption></figure>
+    <figure class="hl-item" data-lb="2"><img src="img/the-fool.jpg" alt="Tatuagem da carta de tarô The Fool" width="425" height="660" loading="lazy" decoding="async"><figcaption><b>The Fool</b><span>tarô</span></figcaption></figure>
   </div>
 </section>
 
@@ -418,9 +436,9 @@ footer .bottom{position:relative;display:flex;justify-content:space-between;flex
       <p class="rv d2">Cada projeto é desenhado junto com você, do primeiro rascunho até o último traço.</p>
     </div>
     <div class="svc-grid">
-      <article class="svc rv"><div class="card"><div class="ph"><img src="img/pet.jpg" alt="Retrato pet tatuado"></div><div class="body"><span class="num">01</span><h3>Retrato Pet</h3><p>A partir de uma foto, desenvolvemos juntos uma arte que guarda para sempre quem fez parte da sua história.</p></div></div></article>
-      <article class="svc rv d1"><div class="card"><div class="ph"><img src="img/fine.jpg" alt="Fine line à mão livre"></div><div class="body"><span class="num">02</span><h3>Fine à Mão Livre</h3><p>Desenho pensado e criado direto na sua pele, para acompanhar o seu corpo e aquilo que você tem de único.</p></div></div></article>
-      <article class="svc rv d2"><div class="card"><div class="ph"><img src="img/agora.jpg" alt="Momento especial tatuado em traço fino"></div><div class="body"><span class="num">03</span><h3>Agora na Pele</h3><p>Aquele momento especial que não cabe só em uma lembrança, registrado em traço fino e delicado.</p></div></div></article>
+      <article class="svc rv"><div class="card"><div class="ph"><img src="img/pet.jpg" alt="Retrato pet tatuado" width="267" height="264" loading="lazy" decoding="async"></div><div class="body"><span class="num">01</span><h3>Retrato Pet</h3><p>A partir de uma foto, desenvolvemos juntos uma arte que guarda para sempre quem fez parte da sua história.</p></div></div></article>
+      <article class="svc rv d1"><div class="card"><div class="ph"><img src="img/fine.jpg" alt="Fine line à mão livre" width="298" height="332" loading="lazy" decoding="async"></div><div class="body"><span class="num">02</span><h3>Fine Line à Mão Livre</h3><p>Desenho pensado e criado direto na sua pele, para acompanhar o seu corpo e aquilo que você tem de único.</p></div></div></article>
+      <article class="svc rv d2"><div class="card"><div class="ph"><img src="img/agora.jpg" alt="Momento especial tatuado em traço fino" width="267" height="264" loading="lazy" decoding="async"></div><div class="body"><span class="num">03</span><h3>Agora na Pele</h3><p>Aquele momento especial que não cabe só em uma lembrança, registrado em traço fino e delicado.</p></div></div></article>
     </div>
   </div>
 </section>
@@ -433,15 +451,15 @@ footer .bottom{position:relative;display:flex;justify-content:space-between;flex
     <div class="steps">
       <div class="step rv"><div class="n">I</div><h4>Conversa</h4><p>Você me conta a sua ideia, a história por trás dela e onde quer tatuar.</p></div>
       <div class="step rv d1"><div class="n">II</div><h4>Criação</h4><p>Desenvolvo a arte pensando em você e ajustamos juntos até ficar do seu jeito.</p></div>
-      <div class="step rv d2"><div class="n">III</div><h4>Sessão</h4><p>Um momento tranquilo e acolhedor, com todo cuidado e material descartável.</p></div>
-      <div class="step rv d3"><div class="n">IV</div><h4>Cuidados</h4><p>Te acompanho na cicatrização para a tattoo ficar linda por muitos anos.</p></div>
+      <div class="step rv d2"><div class="n">III</div><h4>Sessão</h4><p>Um momento tranquilo e acolhedor, com todo o cuidado e material descartável.</p></div>
+      <div class="step rv d3"><div class="n">IV</div><h4>Cuidados</h4><p>Acompanho você na cicatrização para a tattoo ficar linda por muitos anos.</p></div>
     </div>
   </div>
 </section>
 
 <!-- CONTATO -->
 <section class="contact" id="contato">
-  <div class="contact-photo"><img src="img/spider.jpg" alt="Tatuagem com polaroid e fita cassete"></div>
+  <div class="contact-photo"><img src="img/spider.jpg" alt="Tatuagem com polaroid e fita cassete" width="540" height="660" loading="lazy" decoding="async"></div>
   <div class="contact-body">
     <div class="label rv" style="color:var(--cream)">06 · vamos conversar</div>
     <h2 class="blk rv d1">Contato</h2>
@@ -476,7 +494,7 @@ footer .bottom{position:relative;display:flex;justify-content:space-between;flex
   <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2.1 12 .1 5.5.1.1 5.4.1 12c0 2.1.5 4.1 1.6 5.9L0 24l6.3-1.7c1.7.9 3.7 1.4 5.7 1.4 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.4z"/></svg>
 </a>
 
-<div class="lb" id="lb">
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
   <button class="x" aria-label="Fechar">✕</button>
   <button class="prev" aria-label="Anterior">←</button>
   <div><img id="lbImg" alt=""><p id="lbCap"></p></div>
@@ -531,7 +549,7 @@ footer .bottom{position:relative;display:flex;justify-content:space-between;flex
   $('#masonry').innerHTML = works.map((w,i)=>{
     lbList.push(w);
     return `<figure class="tile rv" data-tag="${w.tag}" data-lb="${i+highlights.length}">
-      <img src="${w.src}" alt="${w.t}">
+      <img src="${w.src}" alt="Tatuagem: ${w.t}" loading="lazy" decoding="async">
       <figcaption class="cap"><b>${w.t}</b><small>${w.label}</small></figcaption></figure>`;
   }).join('');
 
@@ -552,17 +570,30 @@ footer .bottom{position:relative;display:flex;justify-content:space-between;flex
   });
   const show = i => { cur = i; $('#lbImg').src = lbList[i].src; $('#lbCap').textContent = lbList[i].t; };
   const step = d => { const v = visible(); const p = v.indexOf(cur); show(v[(p+d+v.length)%v.length]); };
+  const openLb = i => { show(i); lb.classList.add('open'); document.body.classList.add('lb-open'); lb.querySelector('.x').focus({preventScroll:true}); };
+  const closeLb = () => { lb.classList.remove('open'); document.body.classList.remove('lb-open'); };
   document.addEventListener('click', e => {
     const t = e.target.closest('[data-lb]');
-    if (t){ show(+t.dataset.lb); lb.classList.add('open'); }
+    if (t) openLb(+t.dataset.lb);
   });
-  lb.querySelector('.x').onclick = () => lb.classList.remove('open');
+  $$('[data-lb]').forEach(el => {
+    el.tabIndex = 0; el.setAttribute('role','button');
+    el.setAttribute('aria-label', 'Ampliar: ' + lbList[+el.dataset.lb].t);
+    el.addEventListener('keydown', e => { if (e.key==='Enter' || e.key===' '){ e.preventDefault(); openLb(+el.dataset.lb); } });
+  });
+  let sx = null;
+  lb.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', e => {
+    if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; sx = null;
+    if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1);
+  });
+  lb.querySelector('.x').onclick = closeLb;
   lb.querySelector('.prev').onclick = e => { e.stopPropagation(); step(-1); };
   lb.querySelector('.next').onclick = e => { e.stopPropagation(); step(1); };
-  lb.addEventListener('click', e => { if (e.target === lb) lb.classList.remove('open'); });
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
   document.addEventListener('keydown', e => {
     if (!lb.classList.contains('open')) return;
-    if (e.key==='Escape') lb.classList.remove('open');
+    if (e.key==='Escape') closeLb();
     if (e.key==='ArrowRight') step(1);
     if (e.key==='ArrowLeft') step(-1);
   });
