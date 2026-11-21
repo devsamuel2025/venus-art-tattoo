@@ -21,12 +21,18 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"TattooParlor","name":"Venus Art Tattoo","url":"https://venus-art-tattoo.vercel.app/","image":"https://venus-art-tattoo.vercel.app/img/og-capa.jpg","telephone":"+55 62 99441-3872","sameAs":["https://instagram.com/venustattoo.art"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Rye&family=Special+Elite&family=Bebas+Neue&family=Abril+Fatface&family=Lexend:wght@300;400;500;600&family=Lato:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Special+Elite&family=Bebas+Neue&family=Abril+Fatface&family=Lexend:wght@300;400;500;600&family=Lato:wght@700;900&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/unifrakturmaguntia-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/grenze-gotisch-700.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+/* Fonte gótica "híbrida": minúsculas UnifrakturMaguntia (visual do Canva) +
+   maiúsculas Grenze Gotisch, porque as maiúsculas Fraktur são ilegíveis (V parece B, A parece U, I parece J) */
+@font-face{font-family:'Venus Gothic';src:url(fonts/unifrakturmaguntia-400.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Venus Gothic';src:url(fonts/grenze-gotisch-700.woff2) format('woff2');font-display:swap;unicode-range:U+0041-005A,U+00C0-00DD}
 :root{
   --red:#B8120E; --red-deep:#8E0B08; --red-hot:#D8201A;
   --cream:#FBF7E4; --ink:#0E0B0B; --ink-2:#1A1414;
-  --black-letter:'UnifrakturMaguntia', serif;
+  --black-letter:'Venus Gothic', serif;
   --sans:'Lexend', system-ui, sans-serif;
   --ease:cubic-bezier(.2,.8,.2,1);
 }
@@ -346,7 +352,7 @@ footer .bottom{position:relative;display:flex;justify-content:space-between;flex
     <defs><path id="circ" d="M70,70 m-55,0 a55,55 0 1,1 110,0 a55,55 0 1,1 -110,0"/></defs>
     <circle cx="70" cy="70" r="66" fill="none" stroke="#FBF7E4" stroke-opacity=".5"/>
     <text><textPath href="#circ">✦ agenda aberta ✦ tattoo autoral ✦ 2026 </textPath></text>
-    <text x="70" y="82" text-anchor="middle" style="font-family:UnifrakturMaguntia;font-size:34px;letter-spacing:0">V</text>
+    <text x="70" y="82" text-anchor="middle" style="font-family:'Venus Gothic';font-size:34px;letter-spacing:0">V</text>
   </svg>
   <div class="scroll-hint">role</div>
 </section>
@@ -524,7 +530,7 @@ footer .bottom{position:relative;display:flex;justify-content:space-between;flex
   ];
 
   /* ---- ransom letters ---- */
-  const fonts = ["'Rye'","'Special Elite'","'Bebas Neue'","'Abril Fatface'","'UnifrakturMaguntia'"];
+  const fonts = ["'Rye'","'Special Elite'","'Bebas Neue'","'Abril Fatface'","'Venus Gothic'"];
   $$('[data-ransom]').forEach(el => {
     [...el.dataset.ransom].forEach((ch,i) => {
       const s = document.createElement('span');
